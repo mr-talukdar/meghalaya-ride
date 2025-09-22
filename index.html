@@ -58,6 +58,25 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        .cta-box {
+            background-color: #f97316;
+            color: #1a1a1a;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7);
+            }
+            70% {
+                transform: scale(1.02);
+                box-shadow: 0 0 10px 20px rgba(249, 115, 22, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(249, 115, 22, 0);
+            }
+        }
         .bg-pattern {
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23333' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v5h-1v-5h-9v5h-1v-5h-9v5h-1v-5h-9v5h-1v-5h-9v5h-1v-5h-9v5h-1v-5h-9v5h-1v-5H0v-1h5v-9H0v-1h5v-9H0v-1h5v-9H0v-1h5v-9H0v-1h5v-9H0v-1h5v-9H0v-1h5v-9H0v-1h5v-9H0V5h6z'/%3E%3E%3C/g%3E%3C/svg%3E");
         }
@@ -68,14 +87,14 @@
     <div class="container mx-auto p-4 md:p-8 max-w-5xl">
         <!-- Header -->
         <header class="text-center mb-12">
-            <img src="Bbg-logo-removebg-preview.png" alt="BBG Motorrad Logo" class="mx-auto mb-4 w-40">
+            <img src="https://drive.google.com/uc?export=view&id=1hMLSYhguOtzRfmR1gMGcrbtpx3yNnKD2" alt="BBG Motorrad Logo" class="mx-auto mb-4 w-40">
             <h1 class="header-font text-6xl md:text-8xl font-bold tracking-wider gradient-text">MEGHALAYA</h1>
             <h2 class="header-font text-4xl md:text-5xl font-semibold text-white tracking-widest -mt-2">BBG MOTORRAD XPEDITION 2025</h2>
             <p class="text-orange-400 text-lg mt-2">A BBG Ride to the Abode of Clouds</p>
         </header>
 
         <!-- Key Details Section -->
-        <section class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12 text-center">
+        <section class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mb-12 text-center">
             <div class="highlight-card rounded-lg p-4">
                 <i class="fa-solid fa-calendar-days text-3xl text-orange-500 mb-2"></i>
                 <h3 class="font-bold text-lg">DATES</h3>
@@ -92,6 +111,11 @@
                 <p class="text-gray-300">2/3 One-nighters with BBG</p>
             </div>
             <div class="highlight-card rounded-lg p-4">
+                <i class="fa-solid fa-users text-3xl text-orange-500 mb-2"></i>
+                <h3 class="font-bold text-lg">GROUP SIZE</h3>
+                <p class="text-gray-300">Concise group of 10</p>
+            </div>
+            <div class="highlight-card rounded-lg p-4 lg:col-span-1 sm:col-span-3">
                 <i class="fa-solid fa-star text-3xl text-orange-500 mb-2"></i>
                 <h3 class="font-bold text-lg">ATTRACTIONS</h3>
                 <p class="text-gray-300">Christmas & New Year's</p>
@@ -179,6 +203,14 @@
             </div>
         </section>
 
+        <!-- CTA Section -->
+        <section class="my-12">
+            <div class="cta-box rounded-lg p-6 text-center shadow-lg">
+                <h2 class="header-font text-5xl font-bold tracking-wider">LIMITED SLOTS!</h2>
+                <p class="text-xl font-semibold mt-1">Register Fast to Secure Your Spot!</p>
+            </div>
+        </section>
+
         <!-- Sights and Food Section -->
         <section class="mt-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -233,7 +265,7 @@
         <section class="mt-12">
             <!-- Rider's Checklist -->
             <div>
-                <h2 class="header-font text-5xl text-center mb-6 font-bold tracking-wider text-white">RIDER'S CHECKLIST</h2>
+                <h2 class="header-font text-5xl text-center mb-6 font-bold tracking-wider text-white">MANDATORY RIDER'S CHECKLIST</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="highlight-card rounded-lg p-6">
                         <h3 class="font-bold text-2xl header-font text-orange-400 mb-3 flex items-center"><i class="fa-solid fa-user-shield mr-3"></i>Personal Gear</h3>
@@ -319,4 +351,7 @@
 
 </body>
 </html>
+
+
+
 
